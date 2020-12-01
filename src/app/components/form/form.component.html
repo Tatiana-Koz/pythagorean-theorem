@@ -1,0 +1,39 @@
+<div class="container calculator">
+  <div class="result" *ngIf="changeDetecter">
+    <h1>{{newC}}</h1>
+  </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-2 text-center">
+        <label for="heightA">height A
+          <input min=0 name="heightA" #heightA id="heightA" type="number" value=0>
+        </label>
+      </div>
+      <div class="col-10">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 404.6 217.4" style="enable-background:new 0 0 404.6 217.4;" xml:space="preserve">
+          <polygon class="st0 " points="0,0 0,217.4 397.6,217.4 " />
+        </svg>        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">        
+          <div class="error">{{errorMsg}}</div>        
+      </div>
+      <div class="col-10 text-center">
+        <label for="baseB">base B
+          <input name="baseB" #baseB id="baseB" type="number" value=0>
+        </label>
+      </div>
+    </div>    
+    <div class="row justify-content-end">
+      <div class="col-10">
+        <button type="button" class="btn btn-primary my-3 col-12" 
+           (click)="newData(heightA.value, baseB.value)">Calculate</button>
+      </div>
+      <div class="col-10">
+        <button type="button" class="btn btn-danger col-12" (click)="clear(heightA, baseB)">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>

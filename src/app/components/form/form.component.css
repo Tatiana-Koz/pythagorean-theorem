@@ -1,0 +1,35 @@
+.error{
+ color: red;
+ font-size: small;
+}
+label{
+  width: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+polygon{
+  fill:gray;
+}
+
+label input{
+  width: 70px;
+}
+
+.calculator{
+  background-color: white;
+  width: 600px;
+  height: 550px; 
+  padding-top: 50px;   
+  font-size: small;
+    
+}
+.result{
+  position: relative;  
+}
+.result h1{
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  color: green;
+}
